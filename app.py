@@ -87,7 +87,7 @@ def interact_graph(chosen_countries, chosen_years):
     melted_data = melted_data.sort_values(by='year') # sort data by 'year' 
     
     
-    fig = px.line(melted_data, x='year', y='gdpPercap', color='country', title='Average GDP Per Capita by Decade') # Creates the Line Plot
+    fig = px.line(melted_data, x='year', y='gdpPercap', color='country', title='Average GDP Per Capita by Year') # Creates the Line Plot
     fig.update_layout(xaxis_title='Year', yaxis_title='Average GDP Per Capita') # lets me update the xaxis, yaxis, and title to my desired text
     
     return fig
